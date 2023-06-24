@@ -14,7 +14,7 @@ const BackwardCounter = () => {
   //   return () => clearInterval(interval);
   // }, []);
 
-  const counter = useCounter();
+  const counter = useCounter(false);
 
   return <Card>{counter}</Card>;
 };
