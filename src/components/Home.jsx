@@ -4,6 +4,8 @@ const Home = () => {
 
     const [name, setName] = useState("");
 
+    console.log("HostName: " + window.location.hostname);
+
     const nameChangeHandler = e =>
     {
         setName(e.target.value);
@@ -16,7 +18,9 @@ const Home = () => {
 
         // navigate('shubham.localhost:3000/', {replace: true} );
 
-        window.location.hostname = `${name}.localhost`;
+        
+
+        window.location.hostname = `${name}.${window.location.hostname}`;
     }
 
     return (
