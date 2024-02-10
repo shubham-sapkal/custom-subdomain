@@ -6,7 +6,9 @@ export const App = () => {
 
     const parts = window.location.hostname.split('.');
 
-    if( parts.length !== 2){
+    console.log("Parts: " + parts);
+
+    if( parts.length !== 3){
         return (
             <Routes>
                 <Route path="/" element={<Home />} />
