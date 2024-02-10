@@ -8,7 +8,7 @@ export const App = () => {
 
     console.log("Parts: " + parts);
 
-    if( parts.length !== 3){
+    if( parts.length !== 4){
         return (
             <Routes>
                 <Route path="/" element={<Home />} />
